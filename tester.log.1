@@ -1,0 +1,586 @@
+2023-05-16 14:04:50,524 – [line:303] – DEBUG: GET http://localhost:50979/session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_64/text {"id": "F213AE6CEC582E9818C19CA4976214CB_element_64"}
+2023-05-16 14:04:50,556 – [line:546] – DEBUG: http://localhost:50979 "GET /session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_64/text HTTP/1.1" 200 0
+2023-05-16 14:04:50,556 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Warranty end date"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:04:50,556 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:04:50,556 – [line:303] – DEBUG: POST http://localhost:50979/session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_64/elements {"using": "xpath", "value": "./following-sibling::dd[1]", "id": "F213AE6CEC582E9818C19CA4976214CB_element_64"}
+2023-05-16 14:04:50,587 – [line:546] – DEBUG: http://localhost:50979 "POST /session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_64/elements HTTP/1.1" 200 0
+2023-05-16 14:04:50,602 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"F213AE6CEC582E9818C19CA4976214CB_element_68"}]} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:04:50,602 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:04:50,602 – [line:303] – DEBUG: GET http://localhost:50979/session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_68/text {"id": "F213AE6CEC582E9818C19CA4976214CB_element_68"}
+2023-05-16 14:04:50,650 – [line:546] – DEBUG: http://localhost:50979 "GET /session/50c0efb4c9db2f5d8f655fe623572d05/element/F213AE6CEC582E9818C19CA4976214CB_element_68/text HTTP/1.1" 200 0
+2023-05-16 14:04:50,650 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"27 September 2021"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:04:50,650 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:04:50,650 – [line:34] – INFO: Got result = {'Description': 'CLICKSHARE CX-50 SET NA', 'Part number': 'R9861522NA', 'Installation date': '28 September 2020', 'Warranty end date': '27 September 2021'}
+2023-05-16 14:04:50,809 – [line:44] – INFO: Case 1 test Pass
+2023-05-16 14:04:50,809 – [line:303] – DEBUG: DELETE http://localhost:50979/session/50c0efb4c9db2f5d8f655fe623572d05 {}
+2023-05-16 14:04:51,009 – [line:546] – DEBUG: http://localhost:50979 "DELETE /session/50c0efb4c9db2f5d8f655fe623572d05 HTTP/1.1" 200 0
+2023-05-16 14:04:51,012 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:04:51,012 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:04:57,244 – [line:31] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:06:13,789 – [line:26] – INFO: Run Case 2
+2023-05-16 14:06:13,817 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:06:13,824 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:06:14,147 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:06:14,147 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:06:14,147 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:06:14,160 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:06:14,161 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:06:14,161 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:06:14,162 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:06:14,162 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:06:14,163 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:06:14,164 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:06:14,166 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:06:14,169 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:06:14,248 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 432
+2023-05-16 14:06:14,780 – [line:303] – DEBUG: POST http://localhost:51069/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:06:14,789 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51069
+2023-05-16 14:06:15,845 – [line:546] – DEBUG: http://localhost:51069 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:06:15,845 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir432_1166766170"},"goog:chromeOptions":{"debuggerAddress":"localhost:51073"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2799cfbd1ddd4aa95174d4ac4cbcec03"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:15,847 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:15,852 – [line:303] – DEBUG: POST http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:06:19,264 – [line:546] – DEBUG: http://localhost:51069 "POST /session/2799cfbd1ddd4aa95174d4ac4cbcec03/url HTTP/1.1" 200 0
+2023-05-16 14:06:19,265 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:19,265 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:19,266 – [line:303] – DEBUG: POST http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/window/maximize {}
+2023-05-16 14:06:19,869 – [line:546] – DEBUG: http://localhost:51069 "POST /session/2799cfbd1ddd4aa95174d4ac4cbcec03/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:06:19,870 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:19,871 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:21,884 – [line:303] – DEBUG: POST http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:06:21,986 – [line:546] – DEBUG: http://localhost:51069 "POST /session/2799cfbd1ddd4aa95174d4ac4cbcec03/element HTTP/1.1" 200 0
+2023-05-16 14:06:21,987 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"4D325F07512EAA011518C8AA23F173EF_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:21,988 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:21,989 – [line:303] – DEBUG: GET http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/element/4D325F07512EAA011518C8AA23F173EF_element_51/css/color {"propertyName": "color", "id": "4D325F07512EAA011518C8AA23F173EF_element_51"}
+2023-05-16 14:06:22,070 – [line:546] – DEBUG: http://localhost:51069 "GET /session/2799cfbd1ddd4aa95174d4ac4cbcec03/element/4D325F07512EAA011518C8AA23F173EF_element_51/css/color HTTP/1.1" 200 0
+2023-05-16 14:06:22,070 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(255, 255, 255, 1)"} | headers=HTTPHeaderDict({'Content-Length': '34', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:22,070 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:22,070 – [line:303] – DEBUG: POST http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "4D325F07512EAA011518C8AA23F173EF_element_51"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:06:22,436 – [line:546] – DEBUG: http://localhost:51069 "POST /session/2799cfbd1ddd4aa95174d4ac4cbcec03/actions HTTP/1.1" 200 0
+2023-05-16 14:06:22,437 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:22,438 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:22,439 – [line:303] – DEBUG: GET http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03/element/4D325F07512EAA011518C8AA23F173EF_element_51/css/color {"propertyName": "color", "id": "4D325F07512EAA011518C8AA23F173EF_element_51"}
+2023-05-16 14:06:22,487 – [line:546] – DEBUG: http://localhost:51069 "GET /session/2799cfbd1ddd4aa95174d4ac4cbcec03/element/4D325F07512EAA011518C8AA23F173EF_element_51/css/color HTTP/1.1" 200 0
+2023-05-16 14:06:22,489 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(255, 255, 255, 1)"} | headers=HTTPHeaderDict({'Content-Length': '34', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:22,493 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:22,493 – [line:303] – DEBUG: DELETE http://localhost:51069/session/2799cfbd1ddd4aa95174d4ac4cbcec03 {}
+2023-05-16 14:06:22,776 – [line:546] – DEBUG: http://localhost:51069 "DELETE /session/2799cfbd1ddd4aa95174d4ac4cbcec03 HTTP/1.1" 200 0
+2023-05-16 14:06:22,776 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:06:22,776 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:06:28,981 – [line:31] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:08:06,587 – [line:26] – INFO: Run Case 2
+2023-05-16 14:08:06,587 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:08:06,587 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:08:06,867 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:08:06,868 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:08:06,868 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:08:06,869 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:08:06,869 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:08:06,870 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:08:06,871 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:08:06,872 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:08:06,873 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:08:06,873 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:08:06,874 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:08:06,875 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:08:06,926 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 8828
+2023-05-16 14:08:07,485 – [line:303] – DEBUG: POST http://localhost:51150/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:08:07,494 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51150
+2023-05-16 14:08:08,704 – [line:546] – DEBUG: http://localhost:51150 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:08:08,705 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir8828_643958795"},"goog:chromeOptions":{"debuggerAddress":"localhost:51153"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8b6c4ce43db22f9d1baa1e48d07e4538"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:08,707 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:08,707 – [line:303] – DEBUG: POST http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:08:12,628 – [line:546] – DEBUG: http://localhost:51150 "POST /session/8b6c4ce43db22f9d1baa1e48d07e4538/url HTTP/1.1" 200 0
+2023-05-16 14:08:12,629 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:12,630 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:12,631 – [line:303] – DEBUG: POST http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/window/maximize {}
+2023-05-16 14:08:12,977 – [line:546] – DEBUG: http://localhost:51150 "POST /session/8b6c4ce43db22f9d1baa1e48d07e4538/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:08:12,978 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:12,990 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:14,995 – [line:303] – DEBUG: POST http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:08:15,171 – [line:546] – DEBUG: http://localhost:51150 "POST /session/8b6c4ce43db22f9d1baa1e48d07e4538/element HTTP/1.1" 200 0
+2023-05-16 14:08:15,172 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"82D3CD443629EF08716BFA68D99E809F_element_50"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:15,172 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:15,173 – [line:303] – DEBUG: GET http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/element/82D3CD443629EF08716BFA68D99E809F_element_50/css/background-color {"propertyName": "background-color", "id": "82D3CD443629EF08716BFA68D99E809F_element_50"}
+2023-05-16 14:08:15,263 – [line:546] – DEBUG: http://localhost:51150 "GET /session/8b6c4ce43db22f9d1baa1e48d07e4538/element/82D3CD443629EF08716BFA68D99E809F_element_50/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:08:15,266 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:15,266 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:15,268 – [line:303] – DEBUG: POST http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "82D3CD443629EF08716BFA68D99E809F_element_50"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:08:15,623 – [line:546] – DEBUG: http://localhost:51150 "POST /session/8b6c4ce43db22f9d1baa1e48d07e4538/actions HTTP/1.1" 200 0
+2023-05-16 14:08:15,624 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:15,625 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:15,626 – [line:303] – DEBUG: GET http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538/element/82D3CD443629EF08716BFA68D99E809F_element_50/css/background-color {"propertyName": "background-color", "id": "82D3CD443629EF08716BFA68D99E809F_element_50"}
+2023-05-16 14:08:15,663 – [line:546] – DEBUG: http://localhost:51150 "GET /session/8b6c4ce43db22f9d1baa1e48d07e4538/element/82D3CD443629EF08716BFA68D99E809F_element_50/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:08:15,664 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:15,665 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:15,666 – [line:303] – DEBUG: DELETE http://localhost:51150/session/8b6c4ce43db22f9d1baa1e48d07e4538 {}
+2023-05-16 14:08:15,935 – [line:546] – DEBUG: http://localhost:51150 "DELETE /session/8b6c4ce43db22f9d1baa1e48d07e4538 HTTP/1.1" 200 0
+2023-05-16 14:08:15,935 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:08:15,951 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:08:22,118 – [line:31] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:27:43,852 – [line:26] – INFO: Run Case 2
+2023-05-16 14:27:43,883 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:27:43,886 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:27:44,256 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:27:44,256 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:27:44,256 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:27:44,256 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:27:44,269 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:27:44,270 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:27:44,270 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:27:44,271 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:27:44,271 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:27:44,272 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:27:44,276 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:27:44,279 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:27:44,344 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 11068
+2023-05-16 14:27:44,893 – [line:303] – DEBUG: POST http://localhost:51548/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:27:44,902 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51548
+2023-05-16 14:27:46,264 – [line:546] – DEBUG: http://localhost:51548 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:27:46,265 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir11068_1383102851"},"goog:chromeOptions":{"debuggerAddress":"localhost:51553"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"185770cb03d4579c2a7d9b07d47a6531"}} | headers=HTTPHeaderDict({'Content-Length': '857', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:46,267 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:46,268 – [line:303] – DEBUG: POST http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:27:50,781 – [line:546] – DEBUG: http://localhost:51548 "POST /session/185770cb03d4579c2a7d9b07d47a6531/url HTTP/1.1" 200 0
+2023-05-16 14:27:50,782 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:50,783 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:50,784 – [line:303] – DEBUG: POST http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/window/maximize {}
+2023-05-16 14:27:51,475 – [line:546] – DEBUG: http://localhost:51548 "POST /session/185770cb03d4579c2a7d9b07d47a6531/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:27:51,477 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:51,478 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:53,494 – [line:303] – DEBUG: POST http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:27:53,634 – [line:546] – DEBUG: http://localhost:51548 "POST /session/185770cb03d4579c2a7d9b07d47a6531/element HTTP/1.1" 200 0
+2023-05-16 14:27:53,635 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"2FF055AC07CC97D274A3A8E81CD826B6_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:53,636 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:53,637 – [line:303] – DEBUG: GET http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/element/2FF055AC07CC97D274A3A8E81CD826B6_element_51/css/background-color {"propertyName": "background-color", "id": "2FF055AC07CC97D274A3A8E81CD826B6_element_51"}
+2023-05-16 14:27:53,695 – [line:546] – DEBUG: http://localhost:51548 "GET /session/185770cb03d4579c2a7d9b07d47a6531/element/2FF055AC07CC97D274A3A8E81CD826B6_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:27:53,698 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:53,698 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:53,699 – [line:20] – DEBUG: original_color = rgba(240, 0, 0, 1)
+2023-05-16 14:27:53,702 – [line:303] – DEBUG: POST http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "2FF055AC07CC97D274A3A8E81CD826B6_element_51"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:27:54,122 – [line:546] – DEBUG: http://localhost:51548 "POST /session/185770cb03d4579c2a7d9b07d47a6531/actions HTTP/1.1" 200 0
+2023-05-16 14:27:54,123 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:54,124 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:54,125 – [line:303] – DEBUG: GET http://localhost:51548/session/185770cb03d4579c2a7d9b07d47a6531/element/2FF055AC07CC97D274A3A8E81CD826B6_element_51/css/background-color {"propertyName": "background-color", "id": "2FF055AC07CC97D274A3A8E81CD826B6_element_51"}
+2023-05-16 14:27:54,164 – [line:546] – DEBUG: http://localhost:51548 "GET /session/185770cb03d4579c2a7d9b07d47a6531/element/2FF055AC07CC97D274A3A8E81CD826B6_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:27:54,164 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:27:54,167 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:27:54,167 – [line:26] – DEBUG: hover_color = rgba(217, 0, 0, 1)
+2023-05-16 14:29:00,732 – [line:26] – INFO: Run Case 2
+2023-05-16 14:29:00,756 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:29:00,757 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:29:01,061 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:29:01,062 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:29:01,063 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:29:01,063 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:29:01,064 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:29:01,065 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:29:01,066 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:29:01,066 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:29:01,067 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:29:01,067 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:29:01,068 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:29:01,068 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:29:01,133 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 8220
+2023-05-16 14:29:01,676 – [line:303] – DEBUG: POST http://localhost:51641/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:29:01,676 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51641
+2023-05-16 14:29:02,987 – [line:546] – DEBUG: http://localhost:51641 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:29:02,988 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir8220_1601981295"},"goog:chromeOptions":{"debuggerAddress":"localhost:51646"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e8b703ad0886f9a88c5b264dc9de85b5"}} | headers=HTTPHeaderDict({'Content-Length': '856', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:02,989 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:02,990 – [line:303] – DEBUG: POST http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:29:06,919 – [line:546] – DEBUG: http://localhost:51641 "POST /session/e8b703ad0886f9a88c5b264dc9de85b5/url HTTP/1.1" 200 0
+2023-05-16 14:29:06,920 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:06,922 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:06,922 – [line:303] – DEBUG: POST http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/window/maximize {}
+2023-05-16 14:29:07,271 – [line:546] – DEBUG: http://localhost:51641 "POST /session/e8b703ad0886f9a88c5b264dc9de85b5/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:29:07,272 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:07,273 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:09,289 – [line:303] – DEBUG: POST http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:29:09,395 – [line:546] – DEBUG: http://localhost:51641 "POST /session/e8b703ad0886f9a88c5b264dc9de85b5/element HTTP/1.1" 200 0
+2023-05-16 14:29:09,396 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"455C3C72BE300EB4703748C6CFFD8DD7_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:09,397 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:09,398 – [line:303] – DEBUG: GET http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/element/455C3C72BE300EB4703748C6CFFD8DD7_element_51/css/background-color {"propertyName": "background-color", "id": "455C3C72BE300EB4703748C6CFFD8DD7_element_51"}
+2023-05-16 14:29:09,438 – [line:546] – DEBUG: http://localhost:51641 "GET /session/e8b703ad0886f9a88c5b264dc9de85b5/element/455C3C72BE300EB4703748C6CFFD8DD7_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:29:09,440 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:09,441 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:09,442 – [line:20] – DEBUG: original_color = rgba(240, 0, 0, 1)
+2023-05-16 14:29:09,442 – [line:303] – DEBUG: POST http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "455C3C72BE300EB4703748C6CFFD8DD7_element_51"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:29:09,775 – [line:546] – DEBUG: http://localhost:51641 "POST /session/e8b703ad0886f9a88c5b264dc9de85b5/actions HTTP/1.1" 200 0
+2023-05-16 14:29:09,775 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:09,775 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:09,775 – [line:303] – DEBUG: GET http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5/element/455C3C72BE300EB4703748C6CFFD8DD7_element_51/css/background-color {"propertyName": "background-color", "id": "455C3C72BE300EB4703748C6CFFD8DD7_element_51"}
+2023-05-16 14:29:09,837 – [line:546] – DEBUG: http://localhost:51641 "GET /session/e8b703ad0886f9a88c5b264dc9de85b5/element/455C3C72BE300EB4703748C6CFFD8DD7_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:29:09,838 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:09,839 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:09,840 – [line:26] – DEBUG: hover_color = rgba(217, 0, 0, 1)
+2023-05-16 14:29:10,050 – [line:32] – INFO: Case 2 test Pass
+2023-05-16 14:29:10,051 – [line:303] – DEBUG: DELETE http://localhost:51641/session/e8b703ad0886f9a88c5b264dc9de85b5 {}
+2023-05-16 14:29:10,304 – [line:546] – DEBUG: http://localhost:51641 "DELETE /session/e8b703ad0886f9a88c5b264dc9de85b5 HTTP/1.1" 200 0
+2023-05-16 14:29:10,304 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:29:10,312 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:29:16,536 – [line:31] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:39:37,149 – [line:26] – INFO: Run Case 1
+2023-05-16 14:39:37,154 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:39:37,155 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:39:37,538 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:39:37,538 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:39:37,538 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:39:37,547 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:39:37,547 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:39:37,547 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:39:37,549 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:39:37,551 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:39:37,555 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:39:37,560 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:39:37,560 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:39:37,564 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:39:37,621 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 5868
+2023-05-16 14:39:38,160 – [line:303] – DEBUG: POST http://localhost:51746/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:39:38,178 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51746
+2023-05-16 14:39:39,459 – [line:546] – DEBUG: http://localhost:51746 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:39:39,460 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir5868_1880465779"},"goog:chromeOptions":{"debuggerAddress":"localhost:51750"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2963ee74c192b422f529a99663fb37c0"}} | headers=HTTPHeaderDict({'Content-Length': '856', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:39,461 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:39,461 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:39:43,563 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/url HTTP/1.1" 200 0
+2023-05-16 14:39:43,563 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:43,564 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:43,565 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/window/maximize {}
+2023-05-16 14:39:44,097 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:39:44,097 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:44,098 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:46,102 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element {"using": "css selector", "value": "[name=\"serial\"]"}
+2023-05-16 14:39:46,162 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element HTTP/1.1" 200 0
+2023-05-16 14:39:46,163 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:46,164 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:46,165 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_51/value {"text": "1863552437", "value": ["1", "8", "6", "3", "5", "5", "2", "4", "3", "7"], "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_51"}
+2023-05-16 14:39:46,547 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_51/value HTTP/1.1" 200 0
+2023-05-16 14:39:46,549 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:46,550 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:46,551 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:39:46,702 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element HTTP/1.1" 200 0
+2023-05-16 14:39:46,702 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_54"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:46,702 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:46,702 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_54/click {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_54"}
+2023-05-16 14:39:46,931 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_54/click HTTP/1.1" 200 0
+2023-05-16 14:39:46,932 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:46,933 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:49,940 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element {"using": "tag name", "value": "dl"}
+2023-05-16 14:39:49,987 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element HTTP/1.1" 200 0
+2023-05-16 14:39:49,987 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_59"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:49,987 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:49,987 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_59/elements {"using": "tag name", "value": "dt", "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_59"}
+2023-05-16 14:39:50,050 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_59/elements HTTP/1.1" 200 0
+2023-05-16 14:39:50,050 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_60"},{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_61"},{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_62"},{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_63"}]} | headers=HTTPHeaderDict({'Content-Length': '355', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,050 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,050 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_60/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_60"}
+2023-05-16 14:39:50,141 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_60/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,144 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Description"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,144 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,144 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_60/elements {"using": "xpath", "value": "./following-sibling::dd[1]", "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_60"}
+2023-05-16 14:39:50,175 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_60/elements HTTP/1.1" 200 0
+2023-05-16 14:39:50,175 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_64"}]} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,191 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,191 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_64/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_64"}
+2023-05-16 14:39:50,241 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_64/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,241 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"CLICKSHARE CX-50 SET NA"} | headers=HTTPHeaderDict({'Content-Length': '35', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,254 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,254 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_61/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_61"}
+2023-05-16 14:39:50,316 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_61/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,316 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Part number"} | headers=HTTPHeaderDict({'Content-Length': '23', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,316 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,316 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_61/elements {"using": "xpath", "value": "./following-sibling::dd[1]", "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_61"}
+2023-05-16 14:39:50,364 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_61/elements HTTP/1.1" 200 0
+2023-05-16 14:39:50,364 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_65"}]} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,364 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,364 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_65/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_65"}
+2023-05-16 14:39:50,411 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_65/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,411 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"R9861522NA"} | headers=HTTPHeaderDict({'Content-Length': '22', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,411 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,411 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_62/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_62"}
+2023-05-16 14:39:50,458 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_62/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,458 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Installation date"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,458 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,458 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_62/elements {"using": "xpath", "value": "./following-sibling::dd[1]", "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_62"}
+2023-05-16 14:39:50,489 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_62/elements HTTP/1.1" 200 0
+2023-05-16 14:39:50,489 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_66"}]} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,489 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,489 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_66/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_66"}
+2023-05-16 14:39:50,536 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_66/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,536 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"28 September 2020"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,541 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,541 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_63/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_63"}
+2023-05-16 14:39:50,586 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_63/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,586 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Warranty end date"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,586 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,586 – [line:303] – DEBUG: POST http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_63/elements {"using": "xpath", "value": "./following-sibling::dd[1]", "id": "E4020DDEB3B7147E45D0B391EB64E74A_element_63"}
+2023-05-16 14:39:50,631 – [line:546] – DEBUG: http://localhost:51746 "POST /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_63/elements HTTP/1.1" 200 0
+2023-05-16 14:39:50,631 – [line:319] – DEBUG: Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"E4020DDEB3B7147E45D0B391EB64E74A_element_67"}]} | headers=HTTPHeaderDict({'Content-Length': '97', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,631 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,631 – [line:303] – DEBUG: GET http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_67/text {"id": "E4020DDEB3B7147E45D0B391EB64E74A_element_67"}
+2023-05-16 14:39:50,709 – [line:546] – DEBUG: http://localhost:51746 "GET /session/2963ee74c192b422f529a99663fb37c0/element/E4020DDEB3B7147E45D0B391EB64E74A_element_67/text HTTP/1.1" 200 0
+2023-05-16 14:39:50,709 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"27 September 2021"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:50,709 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:50,709 – [line:34] – INFO: Got result = {'Description': 'CLICKSHARE CX-50 SET NA', 'Part number': 'R9861522NA', 'Installation date': '28 September 2020', 'Warranty end date': '27 September 2021'}
+2023-05-16 14:39:50,992 – [line:44] – INFO: Case 1 test Pass
+2023-05-16 14:39:50,992 – [line:303] – DEBUG: DELETE http://localhost:51746/session/2963ee74c192b422f529a99663fb37c0 {}
+2023-05-16 14:39:51,285 – [line:546] – DEBUG: http://localhost:51746 "DELETE /session/2963ee74c192b422f529a99663fb37c0 HTTP/1.1" 200 0
+2023-05-16 14:39:51,285 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:51,285 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:57,432 – [line:26] – INFO: Run Case 2
+2023-05-16 14:39:57,484 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:39:57,485 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:39:57,789 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:39:57,789 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:39:57,789 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:39:57,789 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:39:57,800 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:39:57,804 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:39:57,811 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:39:57,813 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:39:57,815 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:39:57,817 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:39:57,820 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:39:57,822 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:39:57,833 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 3320
+2023-05-16 14:39:58,352 – [line:303] – DEBUG: POST http://localhost:51823/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:39:58,352 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51823
+2023-05-16 14:39:59,601 – [line:546] – DEBUG: http://localhost:51823 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:39:59,602 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir3320_285008451"},"goog:chromeOptions":{"debuggerAddress":"localhost:51826"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6700bf2718f0e239b95b391ef78878d5"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:39:59,603 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:39:59,603 – [line:303] – DEBUG: POST http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:40:05,947 – [line:546] – DEBUG: http://localhost:51823 "POST /session/6700bf2718f0e239b95b391ef78878d5/url HTTP/1.1" 200 0
+2023-05-16 14:40:05,949 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:05,950 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:05,951 – [line:303] – DEBUG: POST http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/window/maximize {}
+2023-05-16 14:40:06,272 – [line:546] – DEBUG: http://localhost:51823 "POST /session/6700bf2718f0e239b95b391ef78878d5/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:40:06,273 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:06,274 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:08,290 – [line:303] – DEBUG: POST http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:40:08,438 – [line:546] – DEBUG: http://localhost:51823 "POST /session/6700bf2718f0e239b95b391ef78878d5/element HTTP/1.1" 200 0
+2023-05-16 14:40:08,439 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:08,440 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:08,441 – [line:303] – DEBUG: GET http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/element/366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51/css/background-color {"propertyName": "background-color", "id": "366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51"}
+2023-05-16 14:40:08,604 – [line:546] – DEBUG: http://localhost:51823 "GET /session/6700bf2718f0e239b95b391ef78878d5/element/366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:40:08,605 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:08,606 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:08,607 – [line:20] – DEBUG: original_color = rgba(240, 0, 0, 1)
+2023-05-16 14:40:08,608 – [line:303] – DEBUG: POST http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:40:08,949 – [line:546] – DEBUG: http://localhost:51823 "POST /session/6700bf2718f0e239b95b391ef78878d5/actions HTTP/1.1" 200 0
+2023-05-16 14:40:08,950 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:08,951 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:08,952 – [line:303] – DEBUG: GET http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5/element/366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51/css/background-color {"propertyName": "background-color", "id": "366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51"}
+2023-05-16 14:40:09,003 – [line:546] – DEBUG: http://localhost:51823 "GET /session/6700bf2718f0e239b95b391ef78878d5/element/366E2029AD4DAB6FBEF8CCC7D2DE9EC6_element_51/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:40:09,005 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:09,006 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:09,006 – [line:26] – DEBUG: hover_color = rgba(217, 0, 0, 1)
+2023-05-16 14:40:09,195 – [line:32] – INFO: Case 2 test Pass
+2023-05-16 14:40:09,195 – [line:303] – DEBUG: DELETE http://localhost:51823/session/6700bf2718f0e239b95b391ef78878d5 {}
+2023-05-16 14:40:09,460 – [line:546] – DEBUG: http://localhost:51823 "DELETE /session/6700bf2718f0e239b95b391ef78878d5 HTTP/1.1" 200 0
+2023-05-16 14:40:09,460 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:40:09,460 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:40:15,665 – [line:31] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:43:23,346 – [line:24] – INFO: Run Case 2
+2023-05-16 14:43:23,351 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:43:23,364 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:43:23,711 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:43:23,711 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:43:23,711 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:43:23,711 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:43:23,725 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:43:23,726 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:43:23,727 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:43:23,727 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:43:23,728 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:43:23,728 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:43:23,733 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:43:23,736 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:43:23,814 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 5040
+2023-05-16 14:43:24,361 – [line:303] – DEBUG: POST http://localhost:51922/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:43:24,367 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:51922
+2023-05-16 14:43:25,486 – [line:546] – DEBUG: http://localhost:51922 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:43:25,487 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir5040_2127888635"},"goog:chromeOptions":{"debuggerAddress":"localhost:51927"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"76b871f2eec58e64c9f95f75b279321b"}} | headers=HTTPHeaderDict({'Content-Length': '856', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:25,489 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:25,490 – [line:303] – DEBUG: POST http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:43:29,566 – [line:546] – DEBUG: http://localhost:51922 "POST /session/76b871f2eec58e64c9f95f75b279321b/url HTTP/1.1" 200 0
+2023-05-16 14:43:29,567 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:29,567 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:29,568 – [line:303] – DEBUG: POST http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/window/maximize {}
+2023-05-16 14:43:30,077 – [line:546] – DEBUG: http://localhost:51922 "POST /session/76b871f2eec58e64c9f95f75b279321b/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:43:30,083 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:30,084 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:32,087 – [line:303] – DEBUG: POST http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:43:32,230 – [line:546] – DEBUG: http://localhost:51922 "POST /session/76b871f2eec58e64c9f95f75b279321b/element HTTP/1.1" 200 0
+2023-05-16 14:43:32,232 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E9C008B21B1B7EE02C6D834FDA61F265_element_52"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:32,233 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:32,234 – [line:303] – DEBUG: GET http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/element/E9C008B21B1B7EE02C6D834FDA61F265_element_52/css/background-color {"propertyName": "background-color", "id": "E9C008B21B1B7EE02C6D834FDA61F265_element_52"}
+2023-05-16 14:43:32,291 – [line:546] – DEBUG: http://localhost:51922 "GET /session/76b871f2eec58e64c9f95f75b279321b/element/E9C008B21B1B7EE02C6D834FDA61F265_element_52/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:43:32,292 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:32,293 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:32,293 – [line:18] – DEBUG: original_color = rgba(240, 0, 0, 1)
+2023-05-16 14:43:32,294 – [line:303] – DEBUG: POST http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "E9C008B21B1B7EE02C6D834FDA61F265_element_52"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:43:32,716 – [line:546] – DEBUG: http://localhost:51922 "POST /session/76b871f2eec58e64c9f95f75b279321b/actions HTTP/1.1" 200 0
+2023-05-16 14:43:32,717 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:32,718 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:32,719 – [line:303] – DEBUG: GET http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b/element/E9C008B21B1B7EE02C6D834FDA61F265_element_52/css/background-color {"propertyName": "background-color", "id": "E9C008B21B1B7EE02C6D834FDA61F265_element_52"}
+2023-05-16 14:43:32,767 – [line:546] – DEBUG: http://localhost:51922 "GET /session/76b871f2eec58e64c9f95f75b279321b/element/E9C008B21B1B7EE02C6D834FDA61F265_element_52/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:43:32,768 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:32,769 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:32,770 – [line:24] – DEBUG: hover_color = rgba(217, 0, 0, 1)
+2023-05-16 14:43:32,977 – [line:30] – INFO: Case 2 test Pass
+2023-05-16 14:43:32,977 – [line:303] – DEBUG: DELETE http://localhost:51922/session/76b871f2eec58e64c9f95f75b279321b {}
+2023-05-16 14:43:33,259 – [line:546] – DEBUG: http://localhost:51922 "DELETE /session/76b871f2eec58e64c9f95f75b279321b HTTP/1.1" 200 0
+2023-05-16 14:43:33,259 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:43:33,259 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:43:40,427 – [line:29] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 14:45:19,747 – [line:24] – INFO: Run Case 2
+2023-05-16 14:45:19,767 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 14:45:19,770 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 14:45:20,148 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 14:45:20,148 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:45:20,148 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 14:45:20,157 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 14:45:20,157 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 14:45:20,158 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 14:45:20,158 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 14:45:20,159 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 14:45:20,160 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 14:45:20,160 – [line:119] – DEBUG: Output: ""
+2023-05-16 14:45:20,161 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 14:45:20,161 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 14:45:20,217 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 5784
+2023-05-16 14:45:20,769 – [line:303] – DEBUG: POST http://localhost:52012/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 14:45:20,774 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:52012
+2023-05-16 14:45:21,945 – [line:546] – DEBUG: http://localhost:52012 "POST /session HTTP/1.1" 200 0
+2023-05-16 14:45:21,945 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir5784_972711558"},"goog:chromeOptions":{"debuggerAddress":"localhost:52017"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bcf313a0522b736f9516dbf78a776650"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:21,946 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:21,948 – [line:303] – DEBUG: POST http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 14:45:26,490 – [line:546] – DEBUG: http://localhost:52012 "POST /session/bcf313a0522b736f9516dbf78a776650/url HTTP/1.1" 200 0
+2023-05-16 14:45:26,491 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:26,492 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:26,493 – [line:303] – DEBUG: POST http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/window/maximize {}
+2023-05-16 14:45:27,031 – [line:546] – DEBUG: http://localhost:52012 "POST /session/bcf313a0522b736f9516dbf78a776650/window/maximize HTTP/1.1" 200 0
+2023-05-16 14:45:27,032 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:27,033 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:29,039 – [line:303] – DEBUG: POST http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 14:45:29,164 – [line:546] – DEBUG: http://localhost:52012 "POST /session/bcf313a0522b736f9516dbf78a776650/element HTTP/1.1" 200 0
+2023-05-16 14:45:29,167 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"21E4A12C4B4705FD5280F7136CAD28F0_element_50"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:29,169 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:29,170 – [line:303] – DEBUG: GET http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/element/21E4A12C4B4705FD5280F7136CAD28F0_element_50/css/background-color {"propertyName": "background-color", "id": "21E4A12C4B4705FD5280F7136CAD28F0_element_50"}
+2023-05-16 14:45:29,276 – [line:546] – DEBUG: http://localhost:52012 "GET /session/bcf313a0522b736f9516dbf78a776650/element/21E4A12C4B4705FD5280F7136CAD28F0_element_50/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:45:29,277 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(240, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:29,278 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:29,279 – [line:18] – DEBUG: original_color = rgba(240, 0, 0, 1)
+2023-05-16 14:45:29,279 – [line:303] – DEBUG: POST http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/actions {"actions": [{"type": "pointer", "parameters": {"pointerType": "mouse"}, "id": "mouse", "actions": [{"type": "pointerMove", "duration": 250, "x": 0, "y": 0, "origin": {"element-6066-11e4-a52e-4f735466cecf": "21E4A12C4B4705FD5280F7136CAD28F0_element_50"}}]}, {"type": "key", "id": "key", "actions": [{"type": "pause", "duration": 0}]}]}
+2023-05-16 14:45:29,761 – [line:546] – DEBUG: http://localhost:52012 "POST /session/bcf313a0522b736f9516dbf78a776650/actions HTTP/1.1" 200 0
+2023-05-16 14:45:29,762 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:29,763 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:29,764 – [line:303] – DEBUG: GET http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650/element/21E4A12C4B4705FD5280F7136CAD28F0_element_50/css/background-color {"propertyName": "background-color", "id": "21E4A12C4B4705FD5280F7136CAD28F0_element_50"}
+2023-05-16 14:45:29,804 – [line:546] – DEBUG: http://localhost:52012 "GET /session/bcf313a0522b736f9516dbf78a776650/element/21E4A12C4B4705FD5280F7136CAD28F0_element_50/css/background-color HTTP/1.1" 200 0
+2023-05-16 14:45:29,808 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"rgba(217, 0, 0, 1)"} | headers=HTTPHeaderDict({'Content-Length': '30', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:29,810 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:29,810 – [line:24] – DEBUG: hover_color = rgba(217, 0, 0, 1)
+2023-05-16 14:45:29,980 – [line:30] – INFO: Case 2 test Pass
+2023-05-16 14:45:29,980 – [line:303] – DEBUG: DELETE http://localhost:52012/session/bcf313a0522b736f9516dbf78a776650 {}
+2023-05-16 14:45:30,256 – [line:546] – DEBUG: http://localhost:52012 "DELETE /session/bcf313a0522b736f9516dbf78a776650 HTTP/1.1" 200 0
+2023-05-16 14:45:30,256 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 14:45:30,256 – [line:346] – DEBUG: Finished Request
+2023-05-16 14:45:36,461 – [line:29] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 15:08:08,179 – [line:24] – INFO: Run Case 3
+2023-05-16 15:08:22,069 – [line:25] – INFO: Run Case 3
+2023-05-16 15:08:22,084 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 15:08:22,085 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 15:08:22,444 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 15:08:22,444 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 15:08:22,444 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 15:08:22,457 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 15:08:22,457 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 15:08:22,458 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 15:08:22,459 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 15:08:22,460 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 15:08:22,462 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 15:08:22,466 – [line:119] – DEBUG: Output: ""
+2023-05-16 15:08:22,470 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 15:08:22,476 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 15:08:22,564 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 1884
+2023-05-16 15:08:23,119 – [line:303] – DEBUG: POST http://localhost:52207/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 15:08:23,127 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:52207
+2023-05-16 15:08:24,346 – [line:546] – DEBUG: http://localhost:52207 "POST /session HTTP/1.1" 200 0
+2023-05-16 15:08:24,347 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir1884_857398199"},"goog:chromeOptions":{"debuggerAddress":"localhost:52213"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8930caf9672cd295de8a333ab367820f"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:24,349 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:24,349 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 15:08:30,285 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/url HTTP/1.1" 200 0
+2023-05-16 15:08:30,285 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:30,286 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:30,287 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/window/maximize {}
+2023-05-16 15:08:30,715 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/window/maximize HTTP/1.1" 200 0
+2023-05-16 15:08:30,716 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:30,717 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:32,730 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 15:08:32,850 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/element HTTP/1.1" 200 0
+2023-05-16 15:08:32,852 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4C3C1C5C1585C9DF65E400666B04F45_element_50"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:32,854 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:32,855 – [line:303] – DEBUG: GET http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_50/text {"id": "E4C3C1C5C1585C9DF65E400666B04F45_element_50"}
+2023-05-16 15:08:32,909 – [line:546] – DEBUG: http://localhost:52207 "GET /session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_50/text HTTP/1.1" 200 0
+2023-05-16 15:08:32,912 – [line:319] – DEBUG: Remote response: status=200 | data={"value":"Get info"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:32,915 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:32,915 – [line:17] – DEBUG: button text = Get info
+2023-05-16 15:08:32,916 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element {"using": "css selector", "value": "[name=\"serial\"]"}
+2023-05-16 15:08:32,974 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/element HTTP/1.1" 200 0
+2023-05-16 15:08:32,976 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4C3C1C5C1585C9DF65E400666B04F45_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:32,978 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:32,979 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_51/value {"text": "1863552437", "value": ["1", "8", "6", "3", "5", "5", "2", "4", "3", "7"], "id": "E4C3C1C5C1585C9DF65E400666B04F45_element_51"}
+2023-05-16 15:08:33,322 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_51/value HTTP/1.1" 200 0
+2023-05-16 15:08:33,323 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:33,324 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:33,324 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 15:08:33,391 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/element HTTP/1.1" 200 0
+2023-05-16 15:08:33,392 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"E4C3C1C5C1585C9DF65E400666B04F45_element_50"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:33,394 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:33,395 – [line:303] – DEBUG: POST http://localhost:52207/session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_50/click {"id": "E4C3C1C5C1585C9DF65E400666B04F45_element_50"}
+2023-05-16 15:08:33,616 – [line:546] – DEBUG: http://localhost:52207 "POST /session/8930caf9672cd295de8a333ab367820f/element/E4C3C1C5C1585C9DF65E400666B04F45_element_50/click HTTP/1.1" 200 0
+2023-05-16 15:08:33,618 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:33,619 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:36,630 – [line:303] – DEBUG: DELETE http://localhost:52207/session/8930caf9672cd295de8a333ab367820f {}
+2023-05-16 15:08:36,932 – [line:546] – DEBUG: http://localhost:52207 "DELETE /session/8930caf9672cd295de8a333ab367820f HTTP/1.1" 200 0
+2023-05-16 15:08:36,935 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:08:36,936 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:08:43,046 – [line:30] – INFO: Test end !!!!!!!!!!!!!
+2023-05-16 15:09:42,662 – [line:25] – INFO: Run Case 3
+2023-05-16 15:09:42,682 – [line:73] – INFO: Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-05-16 15:09:42,684 – [line:105] – DEBUG: Executing process: D:\barco\test_folder\lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json --debug
+2023-05-16 15:09:42,992 – [line:119] – DEBUG: Using shell command to find out chrome version
+2023-05-16 15:09:42,992 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES:\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 15:09:42,992 – [line:119] – DEBUG: Output: "\r\r\n\r\r\n\r"
+2023-05-16 15:09:43,006 – [line:119] – DEBUG: Running command: "wmic datafile where name='%PROGRAMFILES(X86):\\=\\\\%\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe' get Version /value"
+2023-05-16 15:09:43,007 – [line:119] – DEBUG: Output: "\r\r\n\r\r\nVersion=113.0.5672.93\r\r\n\r\r\n\r\r\n\r"
+2023-05-16 15:09:43,007 – [line:119] – DEBUG: The version of chrome is 113.0.5672.93
+2023-05-16 15:09:43,008 – [line:119] – DEBUG: Detected browser: chrome 113
+2023-05-16 15:09:43,009 – [line:119] – DEBUG: Required driver: chromedriver 113.0.5672.63
+2023-05-16 15:09:43,009 – [line:119] – DEBUG: Running command: "chromedriver --version"
+2023-05-16 15:09:43,010 – [line:119] – DEBUG: Output: ""
+2023-05-16 15:09:43,013 – [line:119] – DEBUG: chromedriver 113.0.5672.63 already in the cache
+2023-05-16 15:09:43,016 – [line:93] – DEBUG: Using driver at: C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+2023-05-16 15:09:43,082 – [line:207] – DEBUG: Started executable: `C:\Users\Sam\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 7936
+2023-05-16 15:09:43,639 – [line:303] – DEBUG: POST http://localhost:52295/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}
+2023-05-16 15:09:43,655 – [line:244] – DEBUG: Starting new HTTP connection (1): localhost:52295
+2023-05-16 15:09:44,834 – [line:546] – DEBUG: http://localhost:52295 "POST /session HTTP/1.1" 200 0
+2023-05-16 15:09:44,835 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"113.0.5672.93","chrome":{"chromedriverVersion":"113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})","userDataDir":"C:\\Users\\Sam\\AppData\\Local\\Temp\\scoped_dir7936_762037809"},"goog:chromeOptions":{"debuggerAddress":"localhost:52300"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"99eb081d5c06659781ea993b79458036"}} | headers=HTTPHeaderDict({'Content-Length': '855', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:44,836 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:09:44,837 – [line:303] – DEBUG: POST http://localhost:52295/session/99eb081d5c06659781ea993b79458036/url {"url": "https://www.barco.com/eu-en/support/clickshare-extended-warranty/warranty"}
+2023-05-16 15:09:48,556 – [line:546] – DEBUG: http://localhost:52295 "POST /session/99eb081d5c06659781ea993b79458036/url HTTP/1.1" 200 0
+2023-05-16 15:09:48,557 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:48,558 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:09:48,559 – [line:303] – DEBUG: POST http://localhost:52295/session/99eb081d5c06659781ea993b79458036/window/maximize {}
+2023-05-16 15:09:49,092 – [line:546] – DEBUG: http://localhost:52295 "POST /session/99eb081d5c06659781ea993b79458036/window/maximize HTTP/1.1" 200 0
+2023-05-16 15:09:49,093 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"height":745,"width":1456,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:49,094 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:09:51,102 – [line:303] – DEBUG: POST http://localhost:52295/session/99eb081d5c06659781ea993b79458036/element {"using": "xpath", "value": "/html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div/div/div/div/div[3]/div/div/div/div[2]/div/div/form/button"}
+2023-05-16 15:09:51,197 – [line:546] – DEBUG: http://localhost:52295 "POST /session/99eb081d5c06659781ea993b79458036/element HTTP/1.1" 200 0
+2023-05-16 15:09:51,200 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0994012203EF9E01066F43D3F301C43D_element_50"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:51,202 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:09:51,203 – [line:303] – DEBUG: POST http://localhost:52295/session/99eb081d5c06659781ea993b79458036/element {"using": "css selector", "value": "[name=\"serial\"]"}
+2023-05-16 15:09:51,297 – [line:546] – DEBUG: http://localhost:52295 "POST /session/99eb081d5c06659781ea993b79458036/element HTTP/1.1" 200 0
+2023-05-16 15:09:51,299 – [line:319] – DEBUG: Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"0994012203EF9E01066F43D3F301C43D_element_51"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:51,300 – [line:346] – DEBUG: Finished Request
+2023-05-16 15:09:51,301 – [line:303] – DEBUG: POST http://localhost:52295/session/99eb081d5c06659781ea993b79458036/element/0994012203EF9E01066F43D3F301C43D_element_51/value {"text": "1863552437", "value": ["1", "8", "6", "3", "5", "5", "2", "4", "3", "7"], "id": "0994012203EF9E01066F43D3F301C43D_element_51"}
+2023-05-16 15:09:51,682 – [line:546] – DEBUG: http://localhost:52295 "POST /session/99eb081d5c06659781ea993b79458036/element/0994012203EF9E01066F43D3F301C43D_element_51/value HTTP/1.1" 200 0
+2023-05-16 15:09:51,684 – [line:319] – DEBUG: Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2023-05-16 15:09:51,684 – [line:346] – DEBUG: Finished Request
