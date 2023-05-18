@@ -10,9 +10,9 @@ Currently, this tester only supports case1 to case7, so you can only modify the 
 3. Open CMD window, then switch to testing folder.
 for example, "cd automation_0517-main/automation_0517-main"
 
-4. Keyin "install_env.bat" to install the venv.
+4. Input "install_env.bat" to install the venv.
 
-5. Keyin "run_test.bat", it will start the testing.
+5. Input "run_test.bat", it will start the testing.
 
 6. When the testing was finished, you can open "Barco_result.xlsx" to see your testing results.
 
