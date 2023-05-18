@@ -7,6 +7,8 @@ import case.case_2
 import case.case_3
 import case.case_4
 import case.case_5
+import case.case_6
+import case.case_7
 
 config = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
 config.read('config.ini')

@@ -2,6 +2,8 @@ import logging
 import configparser
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 import time
 import functions
 
@@ -11,6 +13,10 @@ config.read('config.ini')
 def run():
     driver = webdriver.Chrome()
     functions.open(driver)
+    
+    wait = WebDriverWait(driver, 5)
+    accept_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Accept All Cookies')]")))
+    accept_button.click()
     
     # serch
     driver.find_element(By.NAME, 'serial').send_keys(config.get('case_1', 'serial'))

@@ -23,7 +23,12 @@ def run():
     api_return = response.text
     api_return_dic = json.loads(api_return)
     api_return_dic = api_return_dic[0]
-    print('api_return_dic = {}'.format(api_return_dic))
+
+    functions.write_res(api_return_dic, 'response', 5)
+
+    config_max_service_end_date = config.get('case_5', 'max-service-end-date')
+    if config_max_service_end_date.lower() == 'none':
+        config_max_service_end_date = None
 
     if api_return_dic['serial_number'] == config.get('case_5', 'serial_number') and \
         api_return_dic['part_number'] == config.get('case_5', 'part_number') and \
@@ -36,5 +41,11 @@ def run():
         api_return_dic['asset_warranty_start_date'] == config.get('case_5', 'asset_warranty_start_date') and \
         api_return_dic['delivery_date'] == config.get('case_5', 'delivery_date') and \
         api_return_dic['ecc_sold_to_partner'] == config.get('case_5', 'ecc_sold_to_partner') and \
-        api_return_dic['max-service-end-date'] == config.get('case_5', 'max-service-end-date'):
-        print('Pass')
+        api_return_dic['max-service-end-date'] == config_max_service_end_date:
+        
+        logging.info('Case 5 test Pass')
+        functions.write_res('Pass', 'result', 5)
+
+    else:
+        logging.error('Case 5 test Fail')
+        functions.write_res('Fail', 'result', 5)

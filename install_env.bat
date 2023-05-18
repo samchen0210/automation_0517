@@ -3,6 +3,7 @@
 chcp 65001
 ::升级pip
 python -m pip install --upgrade pip
+echo.
 echo upgradeing pip
 timeout 10
 python -m venv test_folder
