@@ -1,5 +1,6 @@
 # This tester olny runs in Windows systems.
-# Before starting the testing, please make sure to use Chrome version 113.x.xxxx.xxx as the browser. If you have a different version, please download the corresponding WebDriver from https://chromedriver.chromium.org/downloads and replace chromedriver.exe in "./case" directory.
+# Before starting the testing, please make sure to use Chrome version 113.x.xxxx.xxx as the browser. 
+# If you have a different version, please download the corresponding WebDriver from https://chromedriver.chromium.org/downloads and replace chromedriver.exe in "./case" directory.
 
 1. Download "automation_0517" repository, than unzip it.
 

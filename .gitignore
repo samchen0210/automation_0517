@@ -1,10 +1,8 @@
 *.pyc
-*.exe
 /test_folder
-*.txt
-*.log
-*.log1
-*.log2
-*.log3
-*.log4
-*.log5
+tester.log
+tester.log1
+tester.log2
+tester.log3
+tester.log4
+tester.log5
