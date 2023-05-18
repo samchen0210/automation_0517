@@ -1,8 +1,8 @@
 *.pyc
 /test_folder
 tester.log
-tester.log1
-tester.log2
-tester.log3
-tester.log4
-tester.log5
+tester.log.1
+tester.log.2
+tester.log.3
+tester.log.4
+tester.log.5
